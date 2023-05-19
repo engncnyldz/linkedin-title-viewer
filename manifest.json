@@ -1,0 +1,17 @@
+{
+
+  "manifest_version": 2,
+  "name": "LinkedIn Profile Title Viewer",
+  "version": "2.0",
+  "author": "Engincan Yıldız",
+
+  "description": "Exposes the whole title of people inside feed and network pages.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["exposeTitles.js"]
+    }
+  ]
+
+}
